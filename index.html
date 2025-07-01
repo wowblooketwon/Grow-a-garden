@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grow a Garden - Fake Roblox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+    <div id="ui">
+      <div id="currency">Sheckles: <span id="sheckle-count">120</span>¢</div>
+      <div id="buttons">
+        <button onclick="openPanel('seed')">Seeds</button>
+        <button onclick="openPanel('garden')">Garden</button>
+        <button onclick="openPanel('sell')">Sell</button>
+        <button onclick="toggleCamera()">Toggle View</button>
+      </div>
+      <div id="shop-panel" class="panel">
+        <h2>Seed Shop</h2>
+        <button onclick="buySeed('Carrot', 10)">Carrot - 10¢</button>
+        <button onclick="buySeed('Tomato', 15)">Tomato - 15¢</button>
+        <button onclick="closePanel()">Close</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
