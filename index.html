@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fake Roblox Grow a Garden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div id="ui">
+  <span id="coins">Shekels: 50</span>
+  <button id="openBuy">Buy Seeds</button>
+  <button id="openSell">Sell Harvest</button>
+</div>
+
+<div id="shop">
+  <div><b>Buy Seeds</b></div>
+  <div><button data-plant="strawberry" data-price="10">🍓 Strawberry - 10</button></div>
+  <div><button data-plant="melon" data-price="20">🍈 Melon - 20</button></div>
+</div>
+
+<div id="sell">
+  <div><b>Sell Harvest</b></div>
+  <div><button data-item="strawberry" data-value="15">🍓 Strawberry - Sell for 15</button></div>
+  <div><button data-item="melon" data-value="30">🍈 Melon - Sell for 30</button></div>
+</div>
+
+<div id="joystick"><div id="joystick-inner"></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
